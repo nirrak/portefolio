@@ -1,0 +1,212 @@
+body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f4f4;
+        font-family: 'Poppins', sans-serif;
+}
+h1 { 
+        color : blue;
+        margin: 20px; 
+        padding-left: 50px;
+        border-radius: 20px;
+        box-shadow: 6px 5px 10px grey;
+}
+
+/*  --- MENU ---  */
+.navbar {
+        display: flex;
+        justify-content: center;
+}
+.menu {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid blue;
+        position: fixed;
+        background-color: #f8f4f4;
+}
+.menu a {
+        color: blue;
+        text-decoration: none;
+}
+.menu a:hover {
+        background-color: rgb(96, 96, 206);
+        color: white;
+}
+
+
+/* --- ACCUEIL --- */
+.imgcercle {
+        border-radius: 300px;
+        width: 450px;
+        display: block;
+        margin: auto;
+}
+.imgcercle:hover {
+    transform: scale(1.1);  
+}
+.nom {
+        margin: 0;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center; 
+}
+.titre {
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+}
+
+/* --- COMPETENCE --- */
+#conteneurcompetence { 
+       font-size: 30px; 
+       display: flex;
+       justify-content: space-around;
+}
+.opquast {
+        padding: 20px;
+}
+.typelangage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+/* --- EXPERIENCE --- */
+#conteneurexperience { 
+        font-size: 30px; 
+        display: flex;
+        justify-content: space-around;
+ }
+ .experience1, .experience2 {
+        margin: 100px 0;
+ }
+
+/* --- CV --- */
+#conteneurcv {
+        text-align: center;
+        margin:30px 0;
+        padding: 50px 0;
+        font-size: 40px;
+        color: blue; 
+}
+.lirecv {
+        border:none;
+        height: 80px;
+        width: 250px;
+	padding:10px 0 10px 0;
+	border-radius:10px;
+	box-shadow:3px 3px 12px #999;
+        background:#fff;
+        font:normal 40px 'Poppins';
+	color:blue;
+} 
+.lirecv:hover {
+        background:blue;
+	color: white;
+} 
+
+/* --- CONTACT --- */
+#conteneurcontact {
+        text-align: center;
+        font-size: 40px; 
+        padding: 90px 0;
+        color: blue;
+}
+.boutonmail {
+        padding: 10px 30px 20px 30px;
+        border-radius:10px;
+	box-shadow:3px 3px 12px #999;
+        background-color: white;
+}
+.boutonmail:hover {
+        background:blue;
+	color: white;       
+}
+
+/* --- FOOTER --- */
+footer {
+        padding: 50px 0;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(223, 221, 221);
+}
+
+@media screen and (max-width: 1100px) {
+        /* --- COMPETENCE --- */
+        #conteneurcompetence { 
+                display: flex;
+                flex-direction: column;
+        }
+        /* --- EXPERIENCE --- */
+        #conteneurexperience { 
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+        }
+        .experience1, .experience2 {
+                margin: 20px 0;
+        }
+        
+}
+@media screen and (max-width: 600px) {
+        h1 {
+                padding: 0;
+                margin-top: 140px;
+                text-align: center;
+        }
+        /*  --- MENU ---  */
+        .menu {
+                display: flex;
+                flex-direction: column;
+                padding-left: 60px;
+        }
+        /* --- ACCUEIL --- */
+        .imgcercle {    
+                width: 250px;
+        }
+        .nom {
+                font-size: 35px;
+        }
+        .titre {
+                font-size: 25px;
+        }
+        /* --- COMPETENCE --- */
+        #conteneurcompetence { 
+                font-size: 20px; 
+        }
+        /* --- EXPERIENCE --- */
+        #conteneurexperience { 
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+        }
+        .experienceimage {
+                margin: 0;
+                padding: 0;
+                width: 250px;
+        }
+        .experience1, .experience2 {
+                margin: 5px 0;
+        }
+        /* --- CV --- */
+        #conteneurcv {
+                margin: 20px 0;
+                padding: 0;
+        }
+        .lirecv {
+                height: 60px;
+                width: 150px;
+                font:normal 25px 'Poppins';
+        }
+        /* --- CONTACT --- */
+        #conteneurcontact {
+                margin: 0;
+                padding: 30px 0;
+                font-size: 25px; 
+        }
+        .boutonmail {
+                padding: 0 8px 8px 8px;
+        }
+}
