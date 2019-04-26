@@ -6,9 +6,8 @@ body {
 }
 h1 { 
         color : blue;
-        margin: 20px; 
         padding-left: 50px;
-        border-radius: 20px;
+        margin: 35px 0;
         box-shadow: 6px 5px 10px grey;
 }
 
@@ -21,6 +20,7 @@ h1 {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        padding: 10px;
         font-size: 20px;
         border: 1px solid blue;
         position: fixed;
@@ -35,8 +35,10 @@ h1 {
         color: white;
 }
 
-
 /* --- ACCUEIL --- */
+.opquast {
+        margin: 35px 0 0 40px;
+}
 .imgcercle {
         border-radius: 300px;
         width: 450px;
@@ -48,7 +50,7 @@ h1 {
 }
 .nom {
         margin: 0;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: bold;
         text-align: center; 
 }
@@ -68,9 +70,12 @@ h1 {
         padding: 20px;
 }
 .typelangage {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid black;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center; 
 }
 
 /* --- EXPERIENCE --- */
@@ -81,7 +86,18 @@ h1 {
  }
  .experience1, .experience2 {
         margin: 100px 0;
+        text-align: center;
  }
+ .boutondes, .boutonlanding {
+        padding: 5px 30px 10px 30px;
+        border-radius:10px;
+	box-shadow:3px 3px 12px #999;
+        background-color: white;
+ }
+ .boutondes:hover, .boutonlanding:hover {
+        background:blue;
+	color: white;       
+}
 
 /* --- CV --- */
 #conteneurcv {
@@ -135,25 +151,31 @@ footer {
 
 @media screen and (max-width: 1100px) {
         /* --- COMPETENCE --- */
-        #conteneurcompetence { 
+/*       #conteneurcompetence { 
                 display: flex;
                 flex-direction: column;
-        }
+        } */
         /* --- EXPERIENCE --- */
         #conteneurexperience { 
-                text-align: center;
                 display: flex;
                 flex-direction: column;
         }
         .experience1, .experience2 {
                 margin: 20px 0;
+                border: 1px solid black;
         }
-        
+}
+@media screen and (max-width: 700px) {
+        /* --- COMPETENCE --- */
+       #conteneurcompetence { 
+                display: flex;
+                flex-direction: column;
+        } 
 }
 @media screen and (max-width: 600px) {
         h1 {
                 padding: 0;
-                margin-top: 140px;
+                margin-top: 153px;
                 text-align: center;
         }
         /*  --- MENU ---  */
@@ -163,6 +185,10 @@ footer {
                 padding-left: 60px;
         }
         /* --- ACCUEIL --- */
+        .opquast {
+                padding: 150px 0 20px 0;
+                width: 100px;
+        }
         .imgcercle {    
                 width: 250px;
         }
@@ -185,11 +211,12 @@ footer {
         .experienceimage {
                 margin: 0;
                 padding: 0;
-                width: 250px;
+                width: 270px;
         }
         .experience1, .experience2 {
-                margin: 5px 0;
+                margin-bottom: 40px;
         }
+
         /* --- CV --- */
         #conteneurcv {
                 margin: 20px 0;
